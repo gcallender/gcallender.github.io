@@ -61,28 +61,28 @@ body {
     /*margin-right: -25%;*/
     /*transform: translate(-80%, -50%);*/
 }
-.contactStyle .icons {
+.icons {
     /*border: 1px solid red;*/
     font-weight: bold;
     padding: 2px 4px 2px 0px;
 }
-.contactStyle .icons .iconSquare {
+.iconSquare {
     width: 54px;
     height: 54px;
 }
-.contactStyle .icons .iconHorizontal {
+.iconHorizontal {
     width: 114px;
     height: 30px;
     margin-left: 4px;
 }
-.mysites {
+.mySites {
     border: 1px solid black;
     margin-top: 20px;
     padding: 0px 20px 10px 20px;
     width: 100%;
     font-size: 1.1em;
 }
-.mysites ul {  
+.mySites ul {  
     line-height: 2em;
 }
 
