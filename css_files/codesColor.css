@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body {
+    background-color: #EAE6FF;
+}
+.note {
+	background-color: #CCCEFF;
+}
+.linkNextBack a {
+	color: #1111FF;
+}
+.linkNextBack a:hover,
+.linkNextBack a:focus {
+	color: #FF1111;
+}
+.linkNextBack,
+.indexLink,
+.references {
+	background-color: #DDDDDD;	
+}
+.indexLink ol, .references ol {
+	color: #2222CC;
+}
+.indexLink a, .references a {
+	color: #2222CC;
+}
+.indexLink a:hover, .indexLink a:focus,
+.references a:hover, .references a:focus {
+	color: #DD2222;
+}
+.section {
+    color: #9C1500;
+}
+.code {
+	background-color: lightyellow;
+}
+.result {
+	background-color: #FFFFFA;
+}
+.unitContent {
+    background-color: #FFFC90;
+}
+.unitContent option:hover {
+    background-color: #017AFB;
+    color: white;
+}
+.unitContent option[value="#"] {
+    background-color: #EEADAD;
+}
+.w3sRights {
+    color: #FF2A2A;
+}
+
+

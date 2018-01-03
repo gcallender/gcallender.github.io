@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Barra de Navegacion */
+/* Menu Principal */
+.navBar {
+	display: block !important;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, sans-serif;
+	font-size: 1em;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+.navBar .ls {
+	float: left;
+}
+.navBar .rs {
+	float: right;
+}
+.navBar a, .btnSubNav {
+	display: inline-block;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-family: inherit;
+	font-size: inherit;
+}
+.btnSubNav {
+	border: none;
+	cursor: pointer;
+}
+/* Sub Menu */
+.subNavBar {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: none;
+	position: fixed;
+	min-width: 160px;
+	z-index: 1;
+}
+.hoverSubNav {
+	display: inline-block;
+}
+.subNavBar a {
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.hoverSubNav:hover .subNavBar {
+	display: block;
+}
+	
+.btnSubNavM {
+	display: none;
+}
+.subNavBarMini {
+	display: none;
+}
+
+/* Barra de menu (click) */
+.jsSubNav {
+	display: block;
+}
+
+/* Small Design */
+@media only screen and (max-width: 640px) {
+    .navBar {
+        font-size: 0.9em;
+    }    
+	.btnSubNav {
+		display: none;
+	}	
+	.btnSubNavM {
+		display: inline-block;
+		text-decoration: none;
+		padding: 14px 16px;
+		font-family: inherit;
+		font-size: inherit;
+		border: none;
+		cursor: pointer;		
+	}
+	.hoverSubNav:hover .subNavBar {
+		display: none;
+	}
+	.subNavBarMini {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		display: none;
+		position: fixed;
+		min-width: 160px;
+		min-height: 50px;
+		z-index: 1;
+		font-family: inherit;
+		font-size: inherit;
+		border: none;
+	}
+	.subNavBarMini option {
+		padding: 14px 16px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.hoverSubNav:hover .subNavBarMini {
+		display: block;
+	}
+	.jsSubNav {
+		display: block;
+	}	
+}
+

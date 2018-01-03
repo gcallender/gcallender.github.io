@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Input Types HTML5 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+                <li><a href="#a01">Color</a></li>
+                <li><a href="#a02">Date</a></li>
+                <li><a href="#a03">Datetime-local</a></li>
+                <li><a href="#a04">Email</a></li>
+                <li><a href="#a05">Month</a></li>
+                <li><a href="#a06">Range</a></li>
+                <li><a href="#a07">Search</a></li>
+                <li><a href="#a08">Tel</a></li>
+                <li><a href="#a09">Time</a></li>
+                <li><a href="#a10">Url</a></li>
+                <li><a href="#a11">Week</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+                <option value="#a01">Color</option>
+                <option value="#a02">Date</option>
+                <option value="#a03">Datetime-local</option>
+                <option value="#a04">Email</option>
+                <option value="#a05">Month</option>
+                <option value="#a06">Range</option>
+                <option value="#a07">Search</option>
+                <option value="#a08">Tel</option>
+                <option value="#a09">Time</option>
+                <option value="#a10">Url</option>
+                <option value="#a11">Week</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Input Types HTML5 </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+            <li><a href="#a01">Color</a></li>
+            <li><a href="#a02">Date</a></li>
+            <li><a href="#a03">Datetime-local</a></li>
+            <li><a href="#a04">Email</a></li>
+            <li><a href="#a05">Month</a></li>
+            <li><a href="#a06">Range</a></li>
+            <li><a href="#a07">Search</a></li>
+            <li><a href="#a08">Tel</a></li>
+            <li><a href="#a09">Time</a></li>
+            <li><a href="#a10">Url</a></li>
+            <li><a href="#a11">Week</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="19_Input_Types.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="19_Input_Types.html" target="_self">
+                <p>Input Types</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="21_Input_Attributes.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="21_Input_Attributes.html" target="_self">
+                <p>Input Attributes</p>
+                </a>
+		</div>	
+
+        <div class="bodyArticle">
+            <h2 class="section">Type Color</h2>
+            <p>The &lt;input type="color"&gt; is used for input fields that should contain a color.</p>
+            <p></p>
+            <p>Depending on browser support, a color picker can show up in the input field.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+A color picker can pop-up when you enter the input field.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+    Select your favorite color:
+    &lt;input type="color" name="favcolor" value="#ff0000"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                A color picker can pop-up when you enter the input field.
+                </p>
+                
+                <form action="/action_page.php">
+                    Select your favorite color:
+                    <input type="color" name="favcolor" value="#ff0000">
+                    <input type="submit">
+                </form>
+                
+                <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a02"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Date</h2>
+            <p>The &lt;input type="date"&gt; is used for input fields that should contain a date.</p>
+            <p></p>
+            <p>Depending on browser support, a date picker can show up in the input field.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+A date picker can pop-up when you enter the input field.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+    Birthday:
+    &lt;input type="date" name="bday"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; type="date" is not supported in Firefox, or Internet Explorer 11 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                A date picker can pop-up when you enter the input field.
+                </p>
+                
+                <form action="/action_page.php">
+                    Birthday:
+                    <input type="date" name="bday">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> type="date" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+            </div>
+            <p></p>
+            <p>You can also add restrictions to dates:</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Enter a date before 1980-01-01:&lt;br&gt;
+    &lt;input type="date" name="bday" max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
+    Enter a date after 2000-01-01:&lt;br&gt;
+    &lt;input type="date" name="bday" min="2000-01-02"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="submit"&gt; 
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; type="date" is not supported in Firefox, or Internet Explorer 11 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Enter a date before 1980-01-01:<br>
+                    <input type="date" name="bday" max="1979-12-31"><br><br>
+                    Enter a date after 2000-01-01:<br>
+                    <input type="date" name="bday" min="2000-01-02"><br><br>
+                    <input type="submit"> 
+                </form>
+
+                <p><strong>Note:</strong> type="date" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+            </div>            
+        </div>
+
+        <p class="interlink" id="a03"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Datetime-local</h2>
+            <p>The &lt;input type="datetime-local"&gt; specifies a date and time input field, with no time zone.</p>
+            <p></p>
+            <p>Depending on browser support, a date picker can show up in the input field.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+A date picker can pop-up when you enter the input field.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+    Birthday (date and time):
+    &lt;input type="datetime-local" name="bdaytime"&gt;
+    &lt;input type="submit" value="Send"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                A date picker can pop-up when you enter the input field.
+                </p>
+                
+                <form action="/action_page.php">
+                    Birthday (date and time):
+                    <input type="datetime-local" name="bdaytime">
+                    <input type="submit" value="Send">
+                </form>
+                
+                <p><strong>Note:</strong> type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a04"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Email</h2>
+            <p>The &lt;input type="email"&gt; is used for input fields that should contain an e-mail address.</p>
+            <p></p>
+            <p>Depending on browser support, the e-mail address can be automatically validated when submitted.</p>
+            <p></p>
+            <p>Some smartphones recognize the email type, and adds ".com" to the keyboard to match email input.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    E-mail:
+    &lt;input type="email" name="email"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt;type="email" is not supported in IE9 and earlier.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    E-mail:
+                    <input type="email" name="email">
+                    <input type="submit">
+                </form>
+                
+                <p>
+                <b>Note:</b>type="email" is not supported in IE9 and earlier.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a05"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Month</h2>
+            <p>The &lt;input type="month"&gt; allows the user to select a month and year.</p>
+            <p></p>
+            <p>Depending on browser support, a date picker can show up in the input field.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+A date picker can pop-up when you enter the input field.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+    Birthday (month and year):
+    &lt;input type="month" name="bdaymonth"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                A date picker can pop-up when you enter the input field.
+                </p>
+                
+                <form action="/action_page.php">
+                    Birthday (month and year):
+                    <input type="month" name="bdaymonth">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a06"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Range</h2>
+            <p>The &lt;input type="range"&gt; defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+The input type "range" can be displayed as a slider control.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php" method="get"&gt;
+    Points:
+    &lt;input type="range" name="points" min="0" max="10"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt;
+type="range" is not supported in Internet Explorer 9 and earlier versions.
+&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                The input type "range" can be displayed as a slider control.
+                </p>
+                
+                <form action="/action_page.php" method="get">
+                    Points:
+                    <input type="range" name="points" min="0" max="10">
+                    <input type="submit">
+                </form>
+                
+                <p>
+                <b>Note:</b>
+                type="range" is not supported in Internet Explorer 9 and earlier versions.
+                </p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a07"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Search</h2>
+            <p>The &lt;input type="search"&gt; is used for search fields (a search field behaves like a regular text field).</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Search Google:
+    &lt;input type="search" name="googlesearch"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Search Google:
+                    <input type="search" name="googlesearch">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <p class="interlink" id="a08"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Tel</h2>
+            <p>The &lt;input type="tel"&gt; is used for input fields that should contain a telephone number.</p>
+            <p></p>
+            <p>The tel type is currently supported only in Safari 8.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Telephone:
+    &lt;input type="tel" name="usrtel"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; type="tel" is only supported in Safari 8 and newer versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Telephone:
+                    <input type="tel" name="usrtel">
+                    <input type="submit">
+                </form>
+                
+                <p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a09"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Time</h2>
+            <p>The &lt;input type="time"&gt; allows the user to select a time (no time zone).</p>
+            <p></p>
+            <p>Depending on browser support, a time picker can show up in the input field.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+A time picker might pop-up when you enter the input field.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+    Select a time:
+    &lt;input type="time" name="usr_time"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; type="time" is not supported in Firefox, or Internet Explorer 12 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                A time picker might pop-up when you enter the input field.
+                </p>
+                
+                <form action="/action_page.php">
+                    Select a time:
+                    <input type="time" name="usr_time">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> type="time" is not supported in Firefox, or Internet Explorer 12 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a10"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Url</h2>
+            <p>The &lt;input type="url"&gt; is used for input fields that should contain a URL address.</p>
+            <p></p>
+            <p>Depending on browser support, the url field can be automatically validated when submitted.</p>
+            <p></p>
+            <p>Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Add your homepage:
+    &lt;input type="url" name="homepage"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt;
+The type="url" is not supported in IE9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Add your homepage:
+                    <input type="url" name="homepage">
+                    <input type="submit">
+                </form>
+                
+                <p><b>Note:</b>
+                The type="url" is not supported in IE9 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a11"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">Type Week</h2>
+            <p>The &lt;input type="week"&gt; allows the user to select a week and year.</p>
+            <p></p>
+            <p>Depending on browser support, a date picker can show up in the input field.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;p&gt;
+Depending on browser support:&lt;br&gt;
+A date picker can pop-up when you enter the input field.
+&lt;/p&gt;
+
+&lt;form action="/action_page.php"&gt;
+    Select a week:
+    &lt;input type="week" name="year_week"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; type="week" is not supported in Firefox, or Internet Explorer 11 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <p>
+                Depending on browser support:<br>
+                A date picker can pop-up when you enter the input field.
+                </p>
+                
+                <form action="/action_page.php">
+                    Select a week:
+                    <input type="week" name="year_week">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> type="week" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+            </div>
+        </div>	
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="#" selected>Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>       
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

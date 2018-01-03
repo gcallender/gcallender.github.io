@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Form Elements </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+                <li><a href="#a01">&lt;input&gt;</a></li>
+                <li><a href="#a02">&lt;select&gt;</a></li>
+                <li><a href="#a03">&lt;textarea&gt;</a></li>
+                <li><a href="#a04">&lt;button&gt;</a></li>
+                <li><a href="#a05">&lt;datalist&gt;</a></li>
+                <li><a href="#a06">&lt;keygen&gt;</a></li>
+                <li><a href="#a07">&lt;output&gt;</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+                <option value="#a01">&lt;input&gt;</option>
+                <option value="#a02">&lt;select&gt;</option>
+                <option value="#a03">&lt;textarea&gt;</option>
+                <option value="#a04">&lt;button&gt;</option>
+                <option value="#a05">&lt;datalist&gt;</option>
+                <option value="#a06">&lt;keygen&gt;</option>
+                <option value="#a07">&lt;output&gt;</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Form Elements </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+            <li><a href="#a01">&lt;input&gt;</a></li>
+            <li><a href="#a02">&lt;select&gt;</a></li>
+            <li><a href="#a03">&lt;textarea&gt;</a></li>
+            <li><a href="#a04">&lt;button&gt;</a></li>
+            <li><a href="#a05">&lt;datalist&gt;</a></li>
+            <li><a href="#a06">&lt;keygen&gt;</a></li>
+            <li><a href="#a07">&lt;output&gt;</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="17_Forms.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="17_Forms.html" target="_self">
+                <p>Forms</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="19_Input_Types.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="19_Input_Types.html" target="_self">
+                <p>Input Types</p>
+                </a>
+		</div>	
+		
+        <div class="bodyArticle">
+            <h2 class="section">&lt;input&gt; Element</h2>
+            <p>The most important form element is the &lt;input&gt; element.</p>
+            <p></p>
+            <p>The <strong>&lt;input&gt;</strong> element can be displayed in several ways, depending on the type attribute.</p>
+        </div>
+
+        <p class="interlink" id="a02"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">&lt;select&gt; Element</h2>
+            <p>The <strong>&lt;select&gt;</strong> element defines a drop-down list.</p>
+            <p></p>
+            <p>The <strong>&lt;option&gt;</strong> elements defines an option that can be selected.</p>
+            <p></p>
+            <p>By default, the first item in the drop-down list is selected.</p>
+            <p></p>
+            <p>To define a pre-selected option, add the selected attribute to the option.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    &lt;select name="cars"&gt;
+        &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+        &lt;option value="saab"&gt;Saab&lt;/option&gt;
+        &lt;option value="fiat" selected&gt;Fiat&lt;/option&gt;
+        &lt;option value="audi"&gt;Audi&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    <select name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat" selected>Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <p class="interlink" id="a03"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">&lt;textarea&gt; Element</h2>
+            <p>The <strong>&lt;textarea&gt;</strong> element defines a multi-line input field (a text area).</p>
+            <p></p>
+            <p>The rows attribute specifies the visible number of lines in a text area.</p>
+            <p></p>
+            <p>The cols attribute specifies the visible width of a text area.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    &lt;textarea name="message" rows="10" cols="30"&gt;The cat was playing in the garden.&lt;/textarea&gt;
+    &lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <p class="interlink" id="a04"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">&lt;button&gt; Element</h2>
+            <p>The <strong>&lt;button&gt;</strong> element defines a clickable button.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            </div>
+        </div>
+
+        <p class="interlink" id="a05"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">HTML5 &lt;datalist&gt; Element</h2>
+            <p>The <strong>&lt;datalist&gt;</strong> element specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+            <p></p>
+            <p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+            <p></p>
+            <p>The list attribute of the &lt;input&gt; element, must refer to the id attribute of the &lt;datalist&gt; element.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    &lt;input list="browsers" name="browser"&gt;
+    &lt;datalist id="browsers"&gt;
+        &lt;option value="Internet Explorer"&gt;
+        &lt;option value="Firefox"&gt;
+        &lt;option value="Chrome"&gt;
+        &lt;option value="Opera"&gt;
+        &lt;option value="Safari"&gt;
+    &lt;/datalist&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The datalist tag is not supported in Safari or IE9 (and earlier).&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit">
+                </form>
+                
+                <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a06"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">HTML5 &lt;keygen&gt; Element</h2>
+            <p>The purpose of the <strong>&lt;keygen&gt;</strong> element is to provide a secure way to authenticate users.</p>
+            <p></p>
+            <p>The <strong>&lt;keygen&gt;</strong> element specifies a key-pair generator field in a form.</p>
+            <p></p>
+            <p>When the form is submitted, two keys are generated, one private and one public.</p>
+            <p></p>
+            <p>The private key is stored locally, and the public key is sent to the server.</p>
+            <p></p>
+            <p>The public key could be used to generate a client certificate to authenticate the user in the future.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Username: &lt;input type="text" name="user"&gt;
+    &lt;br&gt;&lt;br&gt;
+    Encryption: &lt;keygen name="security"&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Username: <input type="text" name="user">
+                    <br><br>
+                    Encryption: <keygen name="security">
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <p class="interlink" id="a07"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">HTML5 &lt;output&gt; Element</h2>
+            <p>The <strong>&lt;output&gt;</strong> element represents the result of a calculation (like one performed by a script).</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    0
+    &lt;input type="range" id="a" name="a" value="50"&gt;
+    100 +
+    &lt;input type="number" id="b" name="b" value="50"&gt;
+    =
+    &lt;output name="x" for="a b"&gt;&lt;/output&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The output element is not supported in Edge 12 or Internet Explorer and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php"
+                oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    0
+                    <input type="range" id="a" name="a" value="50">
+                    100 +
+                    <input type="number" id="b" name="b" value="50">
+                    =
+                    <output name="x" for="a b"></output>
+                    <br><br>
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+            </div>
+        </div>
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="#" selected>Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>        
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p>
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

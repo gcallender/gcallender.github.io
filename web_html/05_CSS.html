@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML CSS </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+	<style>
+		p.center {
+			text-align: center;
+			/* This is a single-line comment */
+			color: red;
+		}
+		p.large {
+			font-size: 200%;
+		}
+	</style>	
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Inline</a></li> 
+				<li><a href="#a02">Internal</a></li> 
+				<li><a href="#a03">External</a></li> 
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="3" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Inline</option> 
+				<option value="#a02">Internal</option> 
+				<option value="#a03">External</option> 
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML CSS </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Inline</a></li> 
+			<li><a href="#a02">Internal</a></li> 
+			<li><a href="#a03">External</a></li> 
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="04_Quotations.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="04_Quotations.html" target="_self">
+                <p>Quotations</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="06_Links.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="06_Links.html" target="_self">
+                <p>Links</p>
+                </a>           
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Inline </h2>
+			<h3>HTML Code: </h3>
+			<div class="code">			
+&lt;h1&gt;This heading will not be affected&lt;/h1&gt;
+&lt;p style="color:red; text-align:center;"&gt;
+    This paragraph will be red and center-aligned.
+    &lt;/p&gt;
+&lt;p style="color:red; text-align:center; font-size:200%;"&gt;
+    This paragraph will be red, center-aligned, and in a large font-size.
+    &lt;/p&gt;			
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<h1>This heading will not be affected</h1>
+				<p style="color:red; text-align:center;">
+					This paragraph will be red and center-aligned.
+					</p>
+				<p style="color:red; text-align:center; font-size:200%;">
+					This paragraph will be red, center-aligned, and in a large font-size.
+					</p>
+			</div>
+		</div>
+		
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Internal </h2>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        p.center {
+            text-align: center;
+            /* This is a single-line comment */
+            color: red;
+        }
+        p.large {
+            font-size: 200%;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1 class="center"&gt;This heading will not be affected&lt;/h1&gt;
+    &lt;p class="center"&gt;This paragraph will be red and center-aligned.&lt;/p&gt;
+    &lt;p class="center large"&gt;
+        This paragraph will be red, center-aligned, and in a large font-size.
+        &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<h1 class="center">This heading will not be affected</h1>
+				<p class="center">This paragraph will be red and center-aligned.</p>
+				<p class="center large">
+				    This paragraph will be red, center-aligned, and in a large font-size.
+					</p>
+			</div>
+		</div>
+		
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">External </h2>
+			<p>In <em>head</em> add <em>link</em>.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;head&gt;
+    &lt;link href="css_files/CSSFile.css" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+			</div>
+			<h3>CSSFile.css content: </h3>
+			<div class="code">
+p.center {
+    text-align: center;
+    /* This is a single-line comment */
+    color: red;
+}
+p.large {
+    font-size: 200%;
+}
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<h1 class="center">This heading will not be affected</h1>
+				<p class="center">This paragraph will be red and center-aligned.</p>
+				<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+			</div>			
+		</div>
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="#" selected>CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>       
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">W3Schools</a></li>
+				<li><a href="https://www.w3schools.com/html/html_styles.asp" target="_blank">Style</a></li>
+				<li><a href="https://www.w3schools.com/html/html_colors.asp" target="_blank">Color</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

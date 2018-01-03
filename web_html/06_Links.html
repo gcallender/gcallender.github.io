@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Links </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+	<style>
+		.exlink a:link {
+			color: green; 
+			background-color: transparent; 
+			text-decoration: none;
+		}
+		.exlink a:visited {
+			color: pink;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		.exlink a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		.exlink a:active {
+			color: yellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}	
+	</style>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Hyperlinks</a></li>
+				<li><a href="#a02">Syntax</a></li>
+				<li><a href="#a03">Colors</a></li>
+				<li><a href="#a04">Target</a></li>
+				<li><a href="#a05">Image</a></li>
+				<li><a href="#a06">Bookmark</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Hyperlinks</option>
+				<option value="#a02">Syntax</option>
+				<option value="#a03">Link Colors</option>
+				<option value="#a04">Target Attribute</option>
+				<option value="#a05">Image as Link</option>
+				<option value="#a06">Bookmark</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Links </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Hyperlinks</a></li>
+			<li><a href="#a02">Syntax</a></li>
+			<li><a href="#a03">Colors</a></li>
+			<li><a href="#a04">Target</a></li>
+			<li><a href="#a05">Image</a></li>
+			<li><a href="#a06">Bookmark</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="05_CSS.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="05_CSS.html" target="_self">
+                <p>CSS</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="07_Images.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="07_Images.html" target="_self">
+                <p>Images</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Hyperlinks</h2>
+			<p>HTML links are hyperlinks.</p>
+			<p>You can click on a link and jump to another document.</p>
+			<p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+			<p class="note"><strong>Note:</strong> HTML links are hyperlinks.
+		You can click on a link and jump to another document.
+		When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Syntax</h2>
+			<p>In HTML, links are defined with the &lt;a&gt; tag.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;a href="https://www.w3schools.com/html/"&gt;Visit a HTML tutorial&lt;/a&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p><a href="https://www.w3schools.com/html/">Visit a HTML tutorial</a></p>
+			</div>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Link Colors</h2>
+			<p>By default, a link will appear like this (in all browsers):</p>
+			<ul>
+				<li>An unvisited link is underlined and blue</li>
+				<li>A visited link is underlined and purple</li>
+				<li>An active link is underlined and red</li>
+			</ul>
+			<p>You can change the default colors, by using styles.</p>
+			<h3>CSS Code: </h3>
+			<div class="code">
+&lt;style&gt;
+.exlink a:link {
+	color: green; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+.exlink a:visited {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+}
+.exlink a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+.exlink a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+&lt;/style&gt;
+			</div>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p&gt;You can change the default colors of links&lt;/p&gt;
+&lt;p class="exlink"&gt;&lt;a href="#" target="_blank"&gt;Example Link&lt;/a&gt;&lt;/p&gt;
+			</div>	
+			<h3>Result: </h3>
+			<div class="result">
+				<p>You can change the default colors of links</p>
+				<p class="exlink"><a href="#" target="_blank">Example Link</a></p>
+			</div>
+		</div>
+
+		<p class="interlink" id="a04"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Target Attribute</h2>
+			<p>The target attribute specifies where to open the linked document.</p>
+			<p>The target attribute can have one of the following values:</p>
+			<ul>
+				<li>_blank - Opens the linked document in a new window or tab</li>
+				<li>_self - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+				<li>_parent - Opens the linked document in the parent frame</li>
+				<li>_top - Opens the linked document in the full body of the window</li>
+				<li>framename - Opens the linked document in a named frame</li>
+			</ul>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p&gt;&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools! (_blank)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.w3schools.com/" target="_self"&gt;Visit W3Schools! (_self)&lt;/a&gt;&lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools! (_blank)</a></p>
+				<p><a href="https://www.w3schools.com/" target="_self">Visit W3Schools! (_self)</a></p>
+			</div>
+		</div>
+
+		<p class="interlink" id="a05"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Image as Link</h2>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;a href="https://www.w3schools.com/html" target="_blank"&gt;
+    &lt;img src="html_symbol_01.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&gt;
+&lt;/a&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<a href="https://www.w3schools.com/html" target="_blank">
+				    <img src="html_symbol_01.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+				</a>
+			</div>
+		</div>
+
+		<p class="interlink" id="a06"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Bookmark</h2>
+			<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web page.</p>
+			<p>Bookmarks can be useful if your webpage is very long.</p>
+			<p>To make a bookmark, you must first create the bookmark, and then add a link to it.</p>
+			<p>When the link is clicked, the page will scroll to the location with the bookmark.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p&gt;&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Chapter 1&lt;/h2&gt;
+&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;
+&lt;h2&gt;Chapter 2&lt;/h2&gt;
+&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;
+&lt;h2&gt;Chapter 3&lt;/h2&gt;
+&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;
+&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;
+&lt;h2&gt;Chapter 5&lt;/h2&gt;
+&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p><a href="#C4">Jump to Chapter 4</a></p>
+				<h2>Chapter 1</h2>
+				<p>This chapter explains ba bla bla</p>
+				<h2>Chapter 2</h2>
+				<p>This chapter explains ba bla bla</p>
+				<h2>Chapter 3</h2>
+				<p>This chapter explains ba bla bla</p>
+				<h2 id="C4">Chapter 4</h2>
+				<p>This chapter explains ba bla bla</p>
+				<h2>Chapter 5</h2>
+				<p>This chapter explains ba bla bla</p>
+			</div>
+		</div>	
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="#" selected>Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>  
+        <p></p>           
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Barra de menu */
+.menuBar {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+.menuBar a, .btnSubMenu {
+	background-color: inherit;
+	color: inherit;
+}
+.menuBar a:hover, 
+.btnSubMenu:hover,
+.menuBar a:focus, 
+.btnSubMenu:focus {
+	/*background-color: #111111;*/
+	background-color: #FDFDFD;
+	color: #000000;
+}
+.subMenuBar {
+	background-color: #555555;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.subMenuBar a:hover {
+	/*background-color: #222222;*/
+	background-color: #FDFDFD;
+	color: #000000;	
+}
+
+/* Small Design */
+@media only screen and (max-width: 640px) {
+	.btnSubMenuM {
+		background-color: inherit;
+		color: inherit;
+	}
+	.btnSubMenuM:hover,
+	.btnSubMenuM:focus {
+		background-color: #FDFDFD;
+		color: #000000;
+	}	
+	.subMenuBarMini {
+		background-color: #555555;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		color: inherit;
+	}	
+	.subMenuBarMini option:hover {
+		background-color: #FDFDFD;
+		color: #000000;	
+	}
+}

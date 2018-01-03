@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Input Attributes HTML5 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+                <li><a href="#a01">autocomplete</a></li>
+                <li><a href="#a02">novalidate</a></li>
+                <li><a href="#a03">autofocus</a></li>
+                <li><a href="#a04">form</a></li>
+                <li><a href="#a05">formaction</a></li>
+                <li><a href="#a06">formenctype</a></li>
+                <li><a href="#a07">formmethod</a></li>
+                <li><a href="#a08">formnovalidate</a></li>
+                <li><a href="#a09">formtarget</a></li>
+                <li><a href="#a10">height-width</a></li>
+                <li><a href="#a11">list </a></li>
+                <li><a href="#a12">min-max</a></li>
+                <li><a href="#a13">multiple</a></li>
+                <li><a href="#a14">pattern</a></li>
+                <li><a href="#a15">placeholder</a></li>
+                <li><a href="#a16">required</a></li>
+                <li><a href="#a17">step</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+                <option value="#a01">autocomplete</option>
+                <option value="#a02">novalidate</option>
+                <option value="#a03">autofocus</option>
+                <option value="#a04">form</option>
+                <option value="#a05">formaction</option>
+                <option value="#a06">formenctype</option>
+                <option value="#a07">formmethod</option>
+                <option value="#a08">formnovalidate</option>
+                <option value="#a09">formtarget</option>
+                <option value="#a10">height-width</option>
+                <option value="#a11">list</option>
+                <option value="#a12">min-max</option>
+                <option value="#a13">multiple</option>
+                <option value="#a14">pattern</option>
+                <option value="#a15">placeholder</option>
+                <option value="#a16">required</option>
+                <option value="#a17">step</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Input Attributes HTML5 </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+            <li><a href="#a01">autocomplete</a></li>
+            <li><a href="#a02">novalidate</a></li>
+            <li><a href="#a03">autofocus</a></li>
+            <li><a href="#a04">form</a></li>
+            <li><a href="#a05">formaction</a></li>
+            <li><a href="#a06">formenctype</a></li>
+            <li><a href="#a07">formmethod</a></li>
+            <li><a href="#a08">formnovalidate</a></li>
+            <li><a href="#a09">formtarget</a></li>
+            <li><a href="#a10">height-width</a></li>
+            <li><a href="#a11">list </a></li>
+            <li><a href="#a12">min-max</a></li>
+            <li><a href="#a13">multiple</a></li>
+            <li><a href="#a14">pattern</a></li>
+            <li><a href="#a15">placeholder</a></li>
+            <li><a href="#a16">required</a></li>
+            <li><a href="#a17">step</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="21_Input_Attributes.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="21_Input_Attributes.html" target="_self">
+                <p>Input Attributes</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <!--
+            <a class="rightSide" href="22_Input_Attributes_html5.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="22_Input_Attributes_html5.html" target="_self">
+                <p>Input Attributes (HTML5)</p>
+                </a>            
+            -->
+		</div>	
+
+        <div class="bodyArticle">
+            <h2 class="section">autocomplete Attribute</h2>
+            <p>The autocomplete attribute specifies whether a form or input field should have autocomplete on or off.</p>
+            <p></p>
+            <p>When autocomplete is on, the browser automatically complete the input values based on values that the user has entered before.</p>
+            <p></p>
+            <p>Tip: It is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice versa.</p>
+            <p></p>
+            <p>The autocomplete attribute works with &lt;form&gt; and the following &lt;input&gt; types: text, search, url, tel, email, password, datepickers, range, and color.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php" autocomplete="on"&gt;
+    First name:&lt;input type="text" name="fname"&gt;&lt;br&gt;
+    Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    E-mail: &lt;input type="email" name="email" autocomplete="off"&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;Fill in and submit the form, then reload the page to see how autocomplete works.&lt;/p&gt;
+&lt;p&gt;Notice that autocomplete is "on" for the form, but "off" for the e-mail field.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php" autocomplete="on">
+                    First name:<input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    E-mail: <input type="email" name="email" autocomplete="off"><br>
+                    <input type="submit">
+                </form>
+                
+                <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+                <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a02"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">novalidate Attribute</h2>
+            <p>The novalidate attribute is a &lt;form&gt; attribute.</p>
+            <p></p>
+            <p>When present, novalidate specifies that the form data should not be validated when submitted.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php" novalidate&gt;
+    E-mail: &lt;input type="email" name="user_email"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php" novalidate>
+                    E-mail: <input type="email" name="user_email">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a03"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">autofocus Attribute</h2>
+            <p>The autofocus attribute specifies that the input field should automatically get focus when the page loads.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    First name:&lt;input type="text" name="fname" autofocus&gt;&lt;br&gt;
+    Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The autofocus attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    First name:<input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The autofocus attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a04"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">form Attribute</h2>
+            <p>The form attribute specifies one or more forms an &lt;input&gt; element belongs to.</p>
+            <p></p>
+            <p>Tip: To refer to more than one form, use a space-separated list of form ids.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php" id="form1"&gt;
+    First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;The "Last name" field below is outside the form element, but still part of the form.&lt;/p&gt;
+Last name: &lt;input type="text" name="lname" form="form1"&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php" id="form1">
+                    First name: <input type="text" name="fname"><br>
+                    <input type="submit" value="Submit">
+                </form>
+                
+                <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+                Last name: <input type="text" name="lname" form="form1">
+            </div>
+        </div>
+
+        <p class="interlink" id="a05"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">formaction Attribute</h2>
+            <p>The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.</p>
+            <p></p>
+            <p>The formaction attribute overrides the action attribute of the &lt;form&gt; element.</p>
+            <p></p>
+            <p>The formaction attribute is used with type="submit" and type="image".</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;&lt;br&gt;
+    &lt;input type="submit" formaction="/action_page2.php" value="Submit to another page"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The formaction attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    First name: <input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    <input type="submit" value="Submit"><br>
+                    <input type="submit" formaction="/action_page2.php" value="Submit to another page">
+                </form>
+                
+                <p><strong>Note:</strong> The formaction attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a06"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">formenctype Attribute</h2>
+            <p>The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").</p>
+            <p></p>
+            <p>The formenctype attribute overrides the enctype attribute of the &lt;form&gt; element.</p>
+            <p></p>
+            <p>The formenctype attribute is used with type="submit" and type="image".</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page_binary.asp" method="post"&gt;
+    First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The formenctype attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page_binary.asp" method="post">
+                    First name: <input type="text" name="fname"><br>
+                    <input type="submit" value="Submit">
+                    <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+                </form>
+                
+                <p><strong>Note:</strong> The formenctype attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a07"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">formmethod Attribute</h2>
+            <p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+            <p></p>
+            <p>The formmethod attribute overrides the method attribute of the &lt;form&gt; element.</p>
+            <p></p>
+            <p>The formmethod attribute can be used with type="submit" and type="image".</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php" method="get"&gt;
+    First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;input type="submit" formmethod="post" formaction="/action_page_post.php" value="Submit using POST"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php" method="get">
+                    First name: <input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    <input type="submit" value="Submit">
+                    <input type="submit" formmethod="post" formaction="/action_page_post.php" value="Submit using POST">
+                </form>
+                
+                <p><strong>Note:</strong> The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a08"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">formnovalidate Attribute</h2>
+            <p>The formnovalidate attribute overrides the novalidate attribute of the &lt;form&gt; element.</p>
+            <p></p>
+            <p>The formnovalidate attribute can be used with type="submit".</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    E-mail: &lt;input type="email" name="userid"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;&lt;br&gt;
+    &lt;input type="submit" formnovalidate value="Submit without validation"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The formnovalidate attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    E-mail: <input type="email" name="userid"><br>
+                    <input type="submit" value="Submit"><br>
+                    <input type="submit" formnovalidate value="Submit without validation">
+                </form>
+                
+                <p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a09"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">formtarget Attribute</h2>
+            <p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+            <p></p>
+            <p>The formtarget attribute overrides the target attribute of the &lt;form&gt; element.</p>
+            <p></p>
+            <p>The formtarget attribute can be used with type="submit" and type="image".</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit as normal"&gt;
+    &lt;input type="submit" formtarget="_blank" value="Submit to a new window/tab"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    First name: <input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    <input type="submit" value="Submit as normal">
+                    <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+                </form>
+                
+                <p><strong>Note:</strong> The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+            </div>
+        </div>
+
+        <p class="interlink" id="a10"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">The height and width Attributes</h2>
+            <p>The height and width attributes specify the height and width of an &lt;input type="image"&gt; element.</p>
+            <p class="note"><strong>Note:</strong> Always specify the size of images. If the browser does not know the size, the page will flicker while images load.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    &lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The input type="image" sends the X and Y coordinates of the click that activated the image button.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    First name: <input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+                </form>
+                
+                <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>         
+            </div>
+        </div>
+
+        <p class="interlink" id="a11"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">list Attribute</h2>
+            <p>The list attribute refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php" method="get"&gt;
+    &lt;input list="browsers" name="browser"&gt;
+    &lt;datalist id="browsers"&gt;
+        &lt;option value="Internet Explorer"&gt;
+        &lt;option value="Firefox"&gt;
+        &lt;option value="Chrome"&gt;
+        &lt;option value="Opera"&gt;
+        &lt;option value="Safari"&gt;
+    &lt;/datalist&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php" method="get">             
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit">
+                </form>
+                
+                <p><b>Note:</b> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>              
+            </div>
+        </div>
+
+        <p class="interlink" id="a12"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">The min and max Attributes</h2>
+            <p>The min and max attributes specify the minimum and maximum values for an &lt;input&gt; element.</p>
+            <p></p>
+            <p>The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Enter a date before 1980-01-01:
+    &lt;input type="date" name="bday" max="1979-12-31"&gt;&lt;br&gt;
+    Enter a date after 2000-01-01:
+    &lt;input type="date" name="bday" min="2000-01-02"&gt;&lt;br&gt;
+    Quantity (between 1 and 5):
+    &lt;input type="number" name="quantity" min="1" max="5"&gt;&lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The max and min attributes will not work for dates and time in Internet Explorer 10, since IE 10 does not support these input types.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Enter a date before 1980-01-01:
+                    <input type="date" name="bday" max="1979-12-31"><br>
+                    Enter a date after 2000-01-01:
+                    <input type="date" name="bday" min="2000-01-02"><br>
+                    Quantity (between 1 and 5):
+                    <input type="number" name="quantity" min="1" max="5"><br>
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.</p>
+                <p><strong>Note:</strong> The max and min attributes will not work for dates and time in Internet Explorer 10, since IE 10 does not support these input types.</p>                
+            </div>
+        </div>
+
+        <p class="interlink" id="a13"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">multiple Attribute</h2>
+            <p>The multiple attribute specifies that the user is allowed to enter more than one value in the &lt;input&gt; element.</p>
+            <p></p>
+            <p>The multiple attribute works with the following input types: email, and file.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Select images: &lt;input type="file" name="img" multiple&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;Try selecting more than one file when browsing for files.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Select images: <input type="file" name="img" multiple>
+                    <input type="submit">
+                </form>
+                
+                <p>Try selecting more than one file when browsing for files.</p>
+                
+                <p><strong>Note:</strong> The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>             
+            </div>
+        </div>
+
+        <p class="interlink" id="a14"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">pattern Attribute</h2>
+            <p>The pattern attribute specifies a regular expression that the &lt;input&gt; element's value is checked against.</p>
+            <p></p>
+            <p>The pattern attribute works with the following input types: text, search, url, tel, email, and password.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Country code: &lt;input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>                
+            </div>
+        </div>
+
+        <p class="interlink" id="a15"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">placeholder Attribute</h2>
+            <p>The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).</p>
+            <p></p>
+            <p>The hint is displayed in the input field before the user enters a value.</p>
+            <p></p>
+            <p>The placeholder attribute works with the following input types: text, search, url, tel, email, and password.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    &lt;input type="text" name="fname" placeholder="First name"&gt;&lt;br&gt;
+    &lt;input type="text" name="lname" placeholder="Last name"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    <input type="text" name="fname" placeholder="First name"><br>
+                    <input type="text" name="lname" placeholder="Last name"><br>
+                    <input type="submit" value="Submit">
+                </form>
+                
+                <p><strong>Note:</strong> The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>                
+            </div>
+        </div>
+
+        <p class="interlink" id="a16"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">required Attribute</h2>
+            <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+            <p></p>
+            <p>The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    Username: &lt;input type="text" name="usrname" required&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    Username: <input type="text" name="usrname" required>
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>              
+            </div>
+        </div>
+
+        <p class="interlink" id="a17"></p>
+        <hr>
+        <div class="bodyArticle">
+            <h2 class="section">step Attribute</h2>
+            <p>The step attribute specifies the legal number intervals for an &lt;input&gt; element.</p>
+            <p></p>
+            <p>The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.</p>
+            <p class="note"><strong>Note:</strong> The step attribute can be used together with the max and min attributes to create a range of legal values.</p>
+            <h3>HTML Code: </h3>
+            <div class="code">
+&lt;form action="/action_page.php"&gt;
+    &lt;input type="number" name="points" step="3"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions.&lt;/p&gt;
+            </div>
+            <h3>Result: </h3>
+            <div class="result">
+                <form action="/action_page.php">
+                    <input type="number" name="points" step="3">
+                    <input type="submit">
+                </form>
+                
+                <p><strong>Note:</strong> The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions.</p>               
+            </div>
+        </div>
+   
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="#" selected>Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>        
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_form_attributes.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p>
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

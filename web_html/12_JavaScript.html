@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML JavaScript </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">&lt;script&gt; Tag</a></li>
+				<li><a href="#a02">Example 01</a></li>
+				<li><a href="#a03">Example 02</a></li>
+				<li><a href="#a04">&lt;noscript&gt; Tag</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">&lt;script&gt; Tag</option>
+				<option value="#a02">Example 01</option>
+				<option value="#a03">Example 02</option>
+				<option value="#a04">&lt;noscript&gt; Tag</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML JavaScript </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">&lt;script&gt; Tag</a></li>
+			<li><a href="#a02">Example 01</a></li>
+			<li><a href="#a03">Example 02</a></li>
+			<li><a href="#a04">&lt;noscript&gt; Tag</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="11_IFrame.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="11_IFrame.html" target="_self">
+                <p>IFrame</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="13_FilePaths.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="13_FilePaths.html" target="_self">
+                <p>FilePaths</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">&lt;script&gt; Tag</h2>
+			<p>The <strong>&lt;script&gt;</strong> tag is used to define a client-side script (JavaScript).</p>
+			<p>The <strong>&lt;script&gt;</strong> element either contains scripting statements, or it points to an external script file through the src attribute.</p>
+			<p>Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</p>
+			<p>To select an HTML element, JavaScript very often use the document.getElementById(id) method.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p id="demo01"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo01").innerHTML = "Hello JavaScript!";
+&lt;/script&gt; 
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p id="demo01"></p>
+				
+				<script>
+				document.getElementById("demo01").innerHTML = "Hello JavaScript!";
+				</script> 
+			</div>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Example 01</h2>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;h1&gt;My First JavaScript&lt;/h1&gt;
+
+&lt;p&gt;JavaScript can change the content of an HTML element:&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction01()"&gt;Click Me!&lt;/button&gt;
+
+&lt;p id="demo02"&gt;This is a demonstration.&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction01() { 
+	document.getElementById("demo02").innerHTML = "Hello JavaScript!";
+}
+&lt;/script&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<h1>My First JavaScript</h1>
+				
+				<p>JavaScript can change the content of an HTML element:</p>
+				
+				<button type="button" onclick="myFunction01()">Click Me!</button>
+				
+				<p id="demo02">This is a demonstration.</p>
+				
+				<script>
+				function myFunction01() { 
+					document.getElementById("demo02").innerHTML = "Hello JavaScript!";
+				}
+				</script>
+			</div>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Example 02</h2>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;h1&gt;My First JavaScript&lt;/h1&gt;
+
+&lt;p id="demo03"&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction02() {
+	document.getElementById("demo03").style.fontSize = "25px"; 
+	document.getElementById("demo03").style.color = "red";
+	document.getElementById("demo03").style.backgroundColor = "yellow";        
+}
+&lt;/script&gt;
+
+&lt;button type="button" onclick="myFunction02()"&gt;Click Me!&lt;/button&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<h1>My First JavaScript</h1>
+				
+				<p id="demo03">JavaScript can change the style of an HTML element.</p>
+				
+				<script>
+				function myFunction02() {
+					document.getElementById("demo03").style.fontSize = "25px"; 
+					document.getElementById("demo03").style.color = "red";
+					document.getElementById("demo03").style.backgroundColor = "yellow";        
+				}
+				</script>
+				
+				<button type="button" onclick="myFunction02()">Click Me!</button>
+			</div>
+		</div>
+
+		<p class="interlink" id="a04"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">&lt;noscript&gt; Tag</h2>
+			<p>The <strong>&lt;noscript&gt;</strong> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p id="demo04"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo04").innerHTML = "Hello JavaScript!";
+&lt;/script&gt;
+
+&lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;
+
+&lt;p&gt;A browser without support for JavaScript will show the text written inside the noscript element.&lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p id="demo04"></p>
+				
+				<script>
+				document.getElementById("demo04").innerHTML = "Hello JavaScript!";
+				</script>
+				
+				<noscript>Sorry, your browser does not support JavaScript!</noscript>
+				
+				<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+			</div>
+		</div>
+			
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="#" selected>JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>    
+        <p></p>    
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_scripts.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p>
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

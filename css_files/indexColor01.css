@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: #EAE6FF;
+}
+
+.titlePage a {
+    background-color: transparent;
+    color: black;
+}
+.titlePage a:hover {
+    background-color: transparent;
+    color: blue;
+}
+
+.summaryIndex {
+    /*background-color: #D1CDFF;*/
+    background-color: #C1E2CB;
+}
+
+.contactStyle {
+    background-color: #C1E2CB;
+}
+.contactStyle a {
+    background-color: transparent;
+    color: blue;
+}
+.contactStyle a:hover {
+    background-color: transparent;
+    color: red;
+}
+
+.mysites {
+    background-color: #C1E2CB;
+}

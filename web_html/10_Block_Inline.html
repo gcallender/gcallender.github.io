@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Block-Inline </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Block-level</a></li>
+				<li><a href="#a02">Inline </a></li>
+				<li><a href="#a03">&lt;div&gt;</a></li>
+				<li><a href="#a04">&lt;span&gt;</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Block-level</option>
+				<option value="#a02">Inline </option>
+				<option value="#a03">&lt;div&gt;</option>
+				<option value="#a04">&lt;span&gt;</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Block-Inline </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Block-level</a></li>
+			<li><a href="#a02">Inline </a></li>
+			<li><a href="#a03">&lt;div&gt;</a></li>
+			<li><a href="#a04">&lt;span&gt;</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="09_Lists.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="09_Lists.html" target="_self">
+                <p>Lists</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="11_IFrame.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="11_IFrame.html" target="_self">
+                <p>IFrame</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Block-level</h2>
+			<p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+			<p>Examples of block-level elements:</p>
+			<ul>
+				<li>&lt;div&gt;</li>
+				<li>&lt;h1&gt; - &lt;h6&gt;</li>
+				<li>&lt;p&gt;</li>
+				<li>&lt;form&gt;</li>
+			</ul>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Inline </h2>
+			<p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+			<p>Examples of inline elements:</p>
+			<ul>
+				<li>&lt;span&gt;</li>
+				<li>&lt;a&gt;</li>
+				<li>&lt;img&gt;</li>
+			</ul>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">&lt;div&gt;</h2>
+			<p>The &lt;div&gt; element is often used as a container for other HTML elements.</p>
+			<p>The &lt;div&gt; element has no required attributes, but both style and class are common.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;div style="background-color:black;color:white;padding:20px;"&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital city of England. It is the most 
+    populous city in the United Kingdom, with a metropolitan area 
+    of over 13 million inhabitants.&lt;/p&gt;
+&lt;p&gt;Standing on the River Thames, London has been a major 
+    settlement for two millennia, its history going back to its founding 
+    by the Romans, who named it Londinium.&lt;/p&gt;
+&lt;/div&gt; 
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<div style="background-color:black;color:white;padding:20px;">
+				  <h2>London</h2>
+				  <p>London is the capital city of England. It is the most populous city in the United Kingdom, 
+				  with a metropolitan area of over 13 million inhabitants.</p>
+				  <p>Standing on the River Thames, London has been a major settlement for two millennia, 
+				  its history going back to its founding by the Romans, who named it Londinium.</p>
+				</div> 
+			</div>
+		</div>
+
+		<p class="interlink" id="a04"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">&lt;span&gt;</h2>
+			<p>The &lt;span&gt; element is often used as a container for some text.</p>
+			<p>The &lt;span&gt; element has no required attributes, but both style and class are common.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;h1&gt;My &lt;span style="color:red"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<h1>My <span style="color:red">Important</span> Heading</h1>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="#" selected>Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>       
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

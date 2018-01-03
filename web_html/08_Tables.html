@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Tables </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+	<style>
+		.table01, .table01 th, .table01 td {
+			border: 1px solid black;
+		}
+		.table02, .table02 th, .table02 td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		.table03 th, .table03 td {
+			padding: 15px;
+			border: 1px solid black;
+			border-collapse: collapse;    
+		}
+		.table04 th {
+			text-align: left;
+			border: 1px solid black;
+			border-collapse: collapse;  			
+		}
+		.table05 {
+			border-spacing: 10px;
+		}
+		.table05, .table05 th, .table05 td {
+			border: 1px solid black;			
+		}
+	</style>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Table</a></li>
+				<li><a href="#a02">Border</a></li>
+				<li><a href="#a03">Collapsed Borders</a></li>
+				<li><a href="#a04">Cell Padding</a></li>
+				<li><a href="#a05">Align</a></li>
+				<li><a href="#a06">Border Spacing</a></li>
+				<li><a href="#a07">Colspan</a></li>
+				<li><a href="#a08">Rowspan</a></li>
+				<li><a href="#a09">Caption</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Table</option>
+				<option value="#a02">Border</option>
+				<option value="#a03">Collapsed Borders</option>
+				<option value="#a04">Cell Padding</option>
+				<option value="#a05">Align</option>
+				<option value="#a06">Border Spacing</option>
+				<option value="#a07">Colspan</option>
+				<option value="#a08">Rowspan</option>
+				<option value="#a09">Caption</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Tables </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Table</a></li>
+			<li><a href="#a02">Border</a></li>
+			<li><a href="#a03">Collapsed Borders</a></li>
+			<li><a href="#a04">Cell Padding</a></li>
+			<li><a href="#a05">Align</a></li>
+			<li><a href="#a06">Border Spacing</a></li>
+			<li><a href="#a07">Colspan</a></li>
+			<li><a href="#a08">Rowspan</a></li>
+			<li><a href="#a09">Caption</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="07_Images.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="07_Images.html" target="_self">
+                <p>Images</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="09_Lists.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="09_Lists.html" target="_self">
+                <p>Lists</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Table</h2>
+			<p>An HTML table is defined with the &lt;table&gt; tag.</p>
+			<p>Each table row is defined with the &lt;tr&gt; tag. A table header is defined with the &lt;th&gt; tag. By default, table headings are bold and centered. A table data/cell is defined with the &lt;td&gt; tag.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<table style="width:100%">
+				    <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th> 
+				    </tr>
+				    <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+				    </tr>
+				    <tr>
+					    <td>Eve</td>
+				        <td>Jackson</td>
+				    </tr>
+				    <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+				    </tr>
+				</table>				
+			</div>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Border</h2>
+			<p>If you do not specify a border for the table, it will be displayed without borders.</p>
+			<p>A border is set using the CSS border property.</p>
+			<h3>CSS Code: </h3>
+			<div class="code">
+.table01, .table01 th, .table01 td {
+    border: 1px solid black;
+}
+			</div>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table01" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>			
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table01" style="width:100%">
+				    <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th> 
+				    </tr>
+				    <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+				    </tr>
+				    <tr>
+					    <td>Eve</td>
+				        <td>Jackson</td>
+				    </tr>
+				    <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+				    </tr>
+				</table>	
+			</div>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Collapsed Borders</h2>
+			<h3>CSS Code: </h3>
+			<div class="code">
+.table02, .table02 th, .table02 td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+			</div>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table02" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>				
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table02" style="width:100%">
+				    <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th> 
+				    </tr>
+				    <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+				    </tr>
+				    <tr>
+					    <td>Eve</td>
+				        <td>Jackson</td>
+				    </tr>
+				    <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+
+		<p class="interlink" id="a04"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Cell Padding</h2>
+			<p>Cell padding specifies the space between the cell content and its borders.</p>
+			<h3>CSS Code: </h3>
+			<div class="code">
+.table03 th, .table03 td {
+    padding: 15px;
+    border: 1px solid black;
+    border-collapse: collapse;    
+}
+			</div>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table03" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>				
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table03" style="width:100%">
+				    <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th> 
+				    </tr>
+				    <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+				    </tr>
+				    <tr>
+					    <td>Eve</td>
+				        <td>Jackson</td>
+				    </tr>
+				    <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+
+		<p class="interlink" id="a05"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Align</h2>
+			<p>By default, table headings are bold and centered.</p>
+			<h3>CSS Code: </h3>
+			<div class="code">
+.table04 th {
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;     
+}
+			</div>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table04" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>				
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table04" style="width:100%">
+				    <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th> 
+				    </tr>
+				    <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+				    </tr>
+				    <tr>
+					    <td>Eve</td>
+				        <td>Jackson</td>
+				    </tr>
+				    <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+
+		<p class="interlink" id="a06"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Border Spacing</h2>
+			<p>Border spacing specifies the space between the cells.</p>
+			<h3>CSS Code: </h3>
+			<div class="code">
+.table05 {
+    border-spacing: 10px;
+}
+.table05, .table05 th, .table05 td {
+    border: 1px solid black;            
+}
+			</div>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table05" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>				
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table05" style="width:100%">
+				    <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th> 
+				    </tr>
+				    <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+				    </tr>
+				    <tr>
+					    <td>Eve</td>
+				        <td>Jackson</td>
+				    </tr>
+				    <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+
+		<p class="interlink" id="a07"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Colspan</h2>
+			<p>To make a cell span more than one column, use the colspan attribute.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table02" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th colspan="2"&gt;Telephone&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bill Gates&lt;/td&gt;
+        &lt;td&gt;55577854&lt;/td&gt;
+        &lt;td&gt;55577855&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table02" style="width:100%">
+					<tr>
+						<th>Name</th>
+						<th colspan="2">Telephone</th>
+					</tr>
+					<tr>
+						<td>Bill Gates</td>
+						<td>55577854</td>
+						<td>55577855</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<p class="interlink" id="a08"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Rowspan</h2>
+			<p>To make a cell span more than one row, use the rowspan attribute.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table02" style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name:&lt;/th&gt;
+        &lt;td&gt;Bill Gates&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th rowspan="2"&gt;Telephone:&lt;/th&gt;
+        &lt;td&gt;55577854&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;55577855&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table02" style="width:100%">
+				    <tr>
+					    <th>Name:</th>
+					    <td>Bill Gates</td>
+				    </tr>
+				    <tr>
+					    <th rowspan="2">Telephone:</th>
+					    <td>55577854</td>
+				    </tr>
+				    <tr>
+					    <td>55577855</td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+
+		<p class="interlink" id="a09"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Caption</h2>
+			<p>To add a caption to a table, use the &lt;caption&gt; tag.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;table class="table02" style="width:100%"&gt;
+    &lt;caption&gt;Monthly savings&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Month&lt;/th&gt;
+        &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;January&lt;/td&gt;
+        &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;February&lt;/td&gt;
+        &lt;td&gt;$50&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<table class="table02" style="width:100%">
+				    <caption>Monthly savings</caption>
+				    <tr>
+					    <th>Month</th>
+					    <th>Savings</th>
+				    </tr>
+				    <tr>
+					    <td>January</td>
+					    <td>$100</td>
+				    </tr>
+				    <tr>
+					    <td>February</td>
+					    <td>$50</td>
+				    </tr>
+				</table>
+			</div>
+		</div>		
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="#" selected>Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>        
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p>
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

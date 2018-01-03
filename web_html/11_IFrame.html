@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML IFrames </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Syntax</a></li>
+				<li><a href="#a02">Size</a></li>
+				<li><a href="#a03">Border</a></li>
+				<li><a href="#a04">Target</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Syntax</option>
+				<option value="#a02">Size</option>
+				<option value="#a03">Border</option>
+				<option value="#a04">Target</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML IFrames </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Syntax</a></li>
+			<li><a href="#a02">Size</a></li>
+			<li><a href="#a03">Border</a></li>
+			<li><a href="#a04">Target</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="10_Block_Inline.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="10_Block_Inline.html" target="_self">
+                <p>Block Inline</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="12_JavaScript.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="12_JavaScript.html" target="_self">
+                <p>JavaScript</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Syntax</h2>
+			<p>An iframe is used to display a web page within a web page.</p>
+			<p>An HTML iframe is defined with the &lt;iframe&gt; tag:</p>
+			<p><strong><em>&lt;iframe src="URL"&gt;&lt;/iframe&gt;</em></strong></p>
+			<p>The src attribute specifies the URL (web address) of the inline frame page.</p>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Size</h2>
+			<p>Use the height and width attributes to specify the size of the iframe.</p>
+			<p>The attribute values are specified in pixels by default.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;iframe src="09_Lists.html" height="300" width="400"&gt;&lt;/iframe&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<iframe src="09_Lists.html" height="300" width="400"></iframe>
+			</div>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Border</h2>
+			<p>By default, an iframe has a border around it.</p>
+			<p>To remove the border, add the style attribute and use the CSS border property.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;iframe src="09_Lists.html" height="300" width="400" style="border:none;"&gt;&lt;/iframe&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<iframe src="09_Lists.html" height="300" width="400" style="border:none;"></iframe>
+			</div>
+		</div>
+
+		<p class="interlink" id="a04"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Target for a Link</h2>
+			<p>An iframe can be used as the target frame for a link.</p>
+			<p>The target attribute of the link must refer to the name attribute of the iframe.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;iframe src="09_Lists.html" name="iframe_a" style="height:300px; width:100%;"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="10_Block_Inline.html" target="iframe_a"&gt;Other Page!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When the target of a link matches the name of an iframe, the link will open in the iframe.&lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<iframe src="09_Lists.html" name="iframe_a" style="height:300px; width:100%;"></iframe>
+				<p><a href="10_Block_Inline.html" target="iframe_a">Other Page!</a></p>
+				<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="#" selected>IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>       
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

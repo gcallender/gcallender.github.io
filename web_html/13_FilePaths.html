@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML File Paths </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+	<style>
+		.info {
+			width: 100%;
+		}
+		.info, .info th, .info td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		.info th {
+			background-color: #999
+		}
+		.info tr:nth-child(even) {
+			background-color: #eee
+		}
+		.info tr:nth-child(odd) {
+			background-color: #ddd
+		}		
+	</style>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Types</a></li>
+				<li><a href="#a02">Absolute</a></li>
+				<li><a href="#a03">Relative</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="3" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Types</option>
+				<option value="#a02">Absolute</option>
+				<option value="#a03">Relative</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML File Paths </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Types</a></li>
+			<li><a href="#a02">Absolute</a></li>
+			<li><a href="#a03">Relative</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="12_JavaScript.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="12_JavaScript.html" target="_self">
+                <p>JavaScript</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="14_ComputerCode.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="14_ComputerCode.html" target="_self">
+                <p>ComputerCode</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Paths Types</h2>
+			<p>
+			<table class="info">
+			<tr>
+				<th><strong>Path</strong></th>
+				<th><strong>Description</strong></th>
+			</tr>
+			<tr>
+				<td><strong>&lt;img src="picture.jpg"&gt;</strong></td>
+				<td>picture.jpg is located in the same folder as the current page</td>
+			</tr>
+			<tr>
+				<td><strong>&lt;img src="images/picture.jpg"&gt;</strong></td>
+				<td>picture.jpg is located in the images folder located in the current folder</td>
+			</tr>
+			<tr>
+				<td><strong>&lt;img src="/images/picture.jpg"&gt;</strong></td>
+				<td>picture.jpg is located in the images folder located at the root of the current web</td>
+			</tr>
+			<tr>
+				<td><strong>&lt;img src="../picture.jpg"&gt;</strong></td>
+				<td>picture.jpg is located in the folder one level up from the current folder</td>
+			</tr>				
+			</table>
+			</p>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Absolute File Paths</h2>
+			<p>An absolute file path is the full URL to an internet file.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
+			</div>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Relative File Paths</h2>
+			<p>A relative file path points to a file relative to the current page.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;img src="/images/picture.jpg" alt="Mountain"&gt;
+&lt;img src="images/picture.jpg" alt="Mountain"&gt;
+&lt;img src="../images/picture.jpg" alt="Mountain"&gt;
+			</div>
+		</div>	
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="#" selected>FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>        
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p>
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

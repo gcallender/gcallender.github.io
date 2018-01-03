@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Barra de menu */
+.navBar {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+.navBar a, .btnSubNav {
+	background-color: inherit;
+	color: inherit;
+}
+.navBar a:hover, 
+.btnSubNav:hover,
+.navBar a:focus, 
+.btnSubNav:focus {
+	/*background-color: #111111;*/
+	background-color: #FDFDFD;
+	color: #000000;
+}
+.subNavBar {
+	background-color: #555555;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.subNavBar a:hover {
+	/*background-color: #222222;*/
+	background-color: #FDFDFD;
+	color: #000000;	
+}
+
+/* Small Design */
+@media only screen and (max-width: 640px) {
+	.btnSubNavM {
+		background-color: inherit;
+		color: inherit;
+	}
+	.btnSubNavM:hover,
+	.btnSubNavM:focus {
+		background-color: #FDFDFD;
+		color: #000000;
+	}	
+	.subNavBarMini {
+		background-color: #555555;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		color: inherit;
+	}	
+	.subNavBarMini option:hover {
+		background-color: #FDFDFD;
+		color: #000000;	
+	}
+}

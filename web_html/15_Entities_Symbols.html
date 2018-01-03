@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Entities and Symbols </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+	<style>
+		.info {
+			width: 100%;
+		}
+		.info, .info th, .info td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		.info th, .info td {
+			text-align: center;
+		}
+		.info th {
+			background-color: #999
+		}
+		.info tr:nth-child(even) {
+			background-color: #eee
+		}
+		.info tr:nth-child(odd) {
+			background-color: #ddd
+		}		
+	</style>	
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">Entities</a></li>
+				<li><a href="#a02">Symbols</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="2" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">Entities</option>
+				<option value="#a02">Symbols</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Entities and Symbols </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">Entities</a></li>
+			<li><a href="#a02">Symbols</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="14_ComputerCode.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="14_ComputerCode.html" target="_self">
+                <p>ComputerCode</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="16_Charset.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="16_Charset.html" target="_self">
+                <p>Charset</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">Entities</h2>
+			<p>Some characters are reserved in HTML.</p>
+			<p></p>
+			<p>If you use the less than (&lt;) or greater than (&gt;) signs in your text, the browser might mix them with tags.</p>
+			<p></p>
+			<p>Character entities are used to display reserved characters in HTML.</p>
+			<p class="note"><strong>Note:</strong> Advantage of using an entity name: An entity name is easy to remember.</p>
+			<p class="note"><strong>Note:</strong> Disadvantage of using an entity name: Browsers may not support all
+				entity names, but the support for numbers is good.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p&gt;Entity: &lt; &lt;/p&gt;
+&lt;p&gt;Code: &amp;lt; or &amp;#60; &lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p>Entity: &lt; </p>
+				<p>Code: &amp;lt; or &amp;#60; </p>
+			</div>
+			<h3>Some Entities</h3>
+			<table class="info">
+			<tr>
+				<th>Result</th>
+				<th>Description</th>
+				<th>Entity Name</th>
+				<th>Entity Number</th>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>non-breaking space</td>
+				<td>&amp;nbsp;</td>
+				<td>&amp;#160;</td>
+			</tr>
+			<tr>
+				<td>&lt;</td>
+				<td>less than</td>
+				<td>&amp;lt;</td>
+				<td>&amp;#60;</td>
+			</tr>
+			<tr>
+				<td>&gt;</td>
+				<td>less than</td>
+				<td>&amp;gt;</td>
+				<td>&amp;#62;</td>
+			</tr>
+			<tr>
+				<td>&amp;</td>
+				<td>ampersand</td>
+				<td>&amp;amp;</td>
+				<td>&amp;#38;</td>
+			</tr>
+			<tr>
+				<td>&quot;</td>
+				<td>double quotation mark</td>
+				<td>&amp;quot;</td>
+				<td>&amp;#34;</td>
+			</tr>
+			<tr>
+				<td>&apos;</td>
+				<td>single quotation mark (apostrophe)</td>
+				<td>&amp;apos;</td>
+				<td>&amp;#39;</td>
+			</tr>
+			<tr>
+				<td>&cent;</td>
+				<td>cent</td>
+				<td>&amp;cent;</td>
+				<td>&amp;#162;</td>
+			</tr>
+			<tr>
+				<td>&pound;</td>
+				<td>pound</td>
+				<td>&amp;pound;</td>
+				<td>&amp;#163;</td>
+			</tr>
+			<tr>
+				<td>&yen;</td>
+				<td>yen</td>
+				<td>&amp;yen;</td>
+				<td>&amp;#165;</td>
+			</tr>
+			<tr>
+				<td>&euro;</td>
+				<td>euro</td>
+				<td>&amp;euro;</td>
+				<td>&amp;#8364;</td>
+			</tr>
+			<tr>
+				<td>&copy;</td>
+				<td>copyright</td>
+				<td>&amp;copy;</td>
+				<td>&amp;#169;</td>
+			</tr>
+			<tr>
+				<td>&reg;</td>
+				<td>registered trademark</td>
+				<td>&amp;reg;</td>
+				<td>&amp;#174;</td>
+			</tr>			
+			</table>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Symbols</h2>
+			<p>Many mathematical, technical, and currency symbols, are not present on a normal keyboard.</p>
+			<p></p>
+			<p>To add such symbols to an HTML page, you can use an HTML entity name.</p>
+			<p></p>
+			<p>If no entity name exists, you can use an entity number, a decimal, or hexadecimal reference.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;p&gt;I will display &amp;euro;&lt;/p&gt;
+&lt;p&gt;I will display &amp;#8364;&lt;/p&gt;
+&lt;p&gt;I will display &amp;#x20AC;&lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<p>I will display &euro;</p>
+				<p>I will display &#8364;</p>
+				<p>I will display &#x20AC;</p>
+			</div>
+			<p></p>
+			<p><a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank">More symbols here</a></p>
+		</div>	
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="#" selected>Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="17_Forms.html">Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>       
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">W3S Entities</a></li>
+				<li><a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank">W3S Symbols</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>

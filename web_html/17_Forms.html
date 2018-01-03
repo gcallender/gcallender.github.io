@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>HTML Forms </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css_files/responsive_design_40cols.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesColor.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/codesStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBar.css" rel="stylesheet" type="text/css" />
+	<link href="../css_files/navBarColor.css" rel="stylesheet" type="text/css" />
+	<script src="../js_files/JSCodes.js"></script>
+</head>
+	
+<body>
+	<!-- Navegation Bar -->
+	<ul class="navBar"> 
+        <li class="ls"><a href="../index.html">Home</a></li>
+		<li class="ls"><a href="#">Top</a></li>
+		<li class="ls hoverSubNav">
+			<button class="btnSubNav" onclick="showSubNavBar()">Content</button>
+			<ul class="subNavBar" id="_subNavBar01">
+				<li><a href="#a01">&lt;form&gt;</a></li>
+				<li><a href="#a02">&lt;input&gt;</a></li>
+				<li><a href="#a03">Action</a></li>
+				<li><a href="#a04">GET?</a></li>
+				<li><a href="#a05">POST?</a></li>
+				<li><a href="#a06">Name</a></li>
+				<li><a href="#a07">&lt;fieldset&gt;</a></li>
+			</ul>
+			<button class="btnSubNavM" onclick="showSubNavBarM()">Content</button>
+			<select class="subNavBarMini" id="_subNavBarMini" size="4" onchange="location = this.value;">
+				<option value="" disabled selected hidden>Choose...</option> 
+				<option value="#a01">&lt;form&gt;</option>
+				<option value="#a02">&lt;input&gt;</option>
+				<option value="#a03">Action</option>
+				<option value="#a04">GET?</option>
+				<option value="#a05">POST?</option>
+				<option value="#a06">Name</option>
+				<option value="#a07">&lt;fieldset&gt;</option>
+			</select>
+			</li>
+	</ul>	
+
+	<!-- Header -->
+	<div class="header">
+		<h1>HTML Forms </h1>
+	</div>
+	
+	<!-- Body Content -->
+	<div class="row">
+	
+	<!-- Left Side -->
+	<div class="col-nor-8 col-big-12 col-med-10 col-sm-40">
+		<div class="indexLink">
+		<h2>Content</h2>
+		<ol>
+			<li><a href="#a01">&lt;form&gt;</a></li>
+			<li><a href="#a02">&lt;input&gt;</a></li>
+			<li><a href="#a03">Action</a></li>
+			<li><a href="#a04">GET?</a></li>
+			<li><a href="#a05">POST?</a></li>
+			<li><a href="#a06">Name</a></li>
+			<li><a href="#a07">&lt;fieldset&gt;</a></li>
+		</ol>
+		</div>
+	</div>
+	
+	<!-- Center -->
+	<div class="col-nor-23 col-big-16 col-med-30 col-sm-40">
+		<div class="linkNextBack">
+			<p class="interlink_ini" id="a01"></p>
+            <a class="leftSide" href="16_Charset.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_left_bq.png" alt="RightArrow" title="Back">
+                </a>            
+			<a class="leftSide" href="16_Charset.html" target="_self">
+                <p>Charset</p>
+                </a>
+            <!--
+			<a class="centerSide" href="../index.html" target="_self">
+				<img src="img/Home_bq.png" alt="HomePage" title="HomePage"></a>	
+            -->
+            <a class="rightSide" href="18_Form_Elements.html" target="_self">
+                <img class="rightSide" src="img/Arrow_icon_right_bq.png" alt="RightArrow" title="Next">
+                </a>
+			<a class="rightSide" href="18_Form_Elements.html" target="_self">
+                <p>Forms Elements</p>
+                </a>
+		</div>	
+		
+		<div class="bodyArticle">
+			<h2 class="section">&lt;form&gt; Element</h2>
+			<p>The HTML <strong>&lt;form&gt;</strong> element defines a form that is used to collect user input.</p>
+			<p></p>
+			<p>An HTML form contains form elements.</p>
+			<p></p>
+			<p>Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.</p>
+		</div>
+
+		<p class="interlink" id="a02"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">&lt;input&gt; Element</h2>
+			<p>The <strong>&lt;input&gt;</strong> element is the most important form element.</p>
+			<p></p>
+			<p>The <strong>&lt;input&gt;</strong> element can be displayed in several ways, depending on the type attribute.</p>
+		</div>
+
+		<p class="interlink" id="a03"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Action Attribute</h2>
+			<p>The action attribute defines the action to be performed when the form is submitted.</p>
+			<p></p>
+			<p>Normally, the form data is sent to a web page on the server when the user clicks on the submit button.</p>
+			<p></p>
+			<p>If the action attribute is omitted, the action is set to the current page.</p>
+		</div>
+
+		<p class="interlink" id="a04"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">When to Use GET?</h2>
+			<p>The default method when submitting form data is GET.</p>
+			<p></p>
+			<p>However, when GET is used, the submitted form data will be visible in the page address field.</p>
+			<p class="note"><strong>Note:</strong> GET must NOT be used when sending sensitive information! GET is best suited for short, non-sensitive, amounts of data, because it has size limitations too.</p>
+		</div>
+
+		<p class="interlink" id="a05"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">When to Use POST?</h2>
+			<p>Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.</p>
+			<p></p>
+			<p>POST has no size limitations, and can be used to send large amounts of data.</p>
+		</div>
+
+		<p class="interlink" id="a06"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">Name Attribute</h2>
+			<p>Each input field must have a name attribute to be submitted.</p>
+			<p></p>
+			<p>If the name attribute is omitted, the data of that input field will not be sent at all.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;form action="/action_page.php"&gt;
+    First name:&lt;br&gt;
+    &lt;input type="text" value="Mickey"&gt;
+    &lt;br&gt;
+    Last name:&lt;br&gt;
+    &lt;input type="text" name="lastname" value="Mouse"&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; 
+
+&lt;p&gt;If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".&lt;/p&gt;
+
+&lt;p&gt;Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.&lt;/p&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<form action="/action_page.php">
+					First name:<br>
+					<input type="text" value="Mickey">
+					<br>
+					Last name:<br>
+					<input type="text" name="lastname" value="Mouse">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+				
+				<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+				
+				<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+			</div>
+		</div>
+
+		<p class="interlink" id="a07"></p>
+		<hr>
+		<div class="bodyArticle">
+			<h2 class="section">&lt;fieldset&gt;</h2>
+			<p>The <strong>&lt;fieldset&gt;</strong> element is used to group related data in a form.</p>
+			<p></p>
+			<p>The <strong>&lt;legend&gt;</strong> element defines a caption for the &lt;fieldset&gt; element.</p>
+			<h3>HTML Code: </h3>
+			<div class="code">
+&lt;form action="/action_page.php"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal information:&lt;/legend&gt;
+        First name:&lt;br&gt;
+        &lt;input type="text" name="firstname" value="Mickey"&gt;
+        &lt;br&gt;
+        Last name:&lt;br&gt;
+        &lt;input type="text" name="lastname" value="Mouse"&gt;
+        &lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+			</div>
+			<h3>Result: </h3>
+			<div class="result">
+				<form action="/action_page.php">
+					<fieldset>
+						<legend>Personal information:</legend>
+						First name:<br>
+						<input type="text" name="firstname" value="Mickey">
+						<br>
+						Last name:<br>
+						<input type="text" name="lastname" value="Mouse">
+						<br><br>
+						<input type="submit" value="Submit">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Right Side -->
+	<div class="col-nor-9 col-big-12 col-med-40 col-sm-40">
+        <div class="unitDiv references">
+            <h2>HTML Index</h2>
+            <select class="unitContent" size="6" onchange="location = this.value;">
+                <option value="00_Introduction.html">Introduction</option>
+                <option value="01_Elements.html">Elements</option>
+                <option value="02_Attributes.html">Attributes</option>
+                <option value="03_TextFormatting.html">TextFormatting</option>
+                <option value="04_Quotations.html">Quotations</option>
+                <option value="05_CSS.html">CSS</option>
+                <option value="06_Links.html">Links</option>
+                <option value="07_Images.html">Images</option>
+                <option value="08_Tables.html">Tables</option>
+                <option value="09_Lists.html">Lists</option>
+                <option value="10_Block_Inline.html">Block Inline</option>
+                <option value="11_IFrame.html">IFrame</option>
+                <option value="12_JavaScript.html">JavaScript</option>
+                <option value="13_FilePaths.html">FilePaths</option>
+                <option value="14_ComputerCode.html">ComputerCode</option>
+                <option value="15_Entities_Symbols.html">Entities Symbols</option>
+                <option value="16_Charset.html">Charset</option>
+                <option value="#" selected>Forms</option>
+                <option value="18_Form_Elements.html">Form Elements</option>
+                <option value="19_Input_Types.html">Input Types</option>
+                <option value="20_Input_Types_html5.html">Input Types (HTML5)</option>
+                <option value="21_Input_Attributes.html">Input Attributes</option>
+                <option value="22_Input_Attributes_html5.html">Input Attributes (HTML5)</option>
+            </select>
+        </div>
+        <p></p>       
+		<div class="references">
+			<h2>References</h2>
+			<ol>
+				<li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">W3Schools</a></li>
+			</ol>
+        </div>
+        <p></p>
+		<div class="references">
+            <p class="w3sRights">This page is only a summary of the material from W3Schools.
+                Definitions, Examples and Codes are exclusive property of <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+        </div>
+        <p></p> 
+	</div>
+	
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<br>
+		<br>
+		<br>
+	</footer>		
+
+</body>
+</html>
