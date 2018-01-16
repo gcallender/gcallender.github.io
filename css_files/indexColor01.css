@@ -33,3 +33,20 @@ body {
 .mysites {
     background-color: #C1E2CB;
 }
+
+/* Botones */
+.btn a {
+    //background-color: #E0E0E0;
+    background: linear-gradient(#FFFFFF, #BBBBBB);
+    color: black;
+}
+.btn a:hover {
+    background: #BBBBBB;
+    color: black;
+}
+.btn a:active {
+    background: #CCCCCC;
+    color: black;
+}
+
+

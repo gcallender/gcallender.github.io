@@ -76,6 +76,24 @@ body {
 .mySites ul {  
     line-height: 2em;
 }
+/* Botones */
+.btn span {
+    font-weight: bold;
+    line-height: 200%;
+}
+.btn a {
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: Courier New, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0px 8px;
+    padding: 4px 14px;
+}
+.btn a:active {
+    font-size: 0.96em;
+    margin: 0px 5.5px;
+}
 
 
 /* Small Design */
