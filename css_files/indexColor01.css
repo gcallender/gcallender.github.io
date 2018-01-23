@@ -4,6 +4,13 @@ body {
     background-color: #EAE6FF;
 }
 
+body a {
+    color: blue;
+}
+body a:hover {
+    color: red;
+}
+
 .titlePage a {
     background-color: transparent;
     color: black;
@@ -18,16 +25,11 @@ body {
     background-color: #C1E2CB;
 }
 
-.contactStyle {
+.sectionStyle {
     background-color: #C1E2CB;
 }
-.contactStyle a {
-    background-color: transparent;
-    color: blue;
-}
-.contactStyle a:hover {
-    background-color: transparent;
-    color: red;
+.winSection {
+    background: linear-gradient(#85D2A9, #D6FEEC);
 }
 
 .mysites {
@@ -35,18 +37,30 @@ body {
 }
 
 /* Botones */
-.btn a {
-    //background-color: #E0E0E0;
+.btn {
+    /*background-color: #E0E0E0;*/
     background: linear-gradient(#FFFFFF, #BBBBBB);
     color: black;
 }
-.btn a:hover {
+.btn:hover {
     background: #BBBBBB;
     color: black;
 }
-.btn a:active {
+.btn:active {
     background: #CCCCCC;
     color: black;
 }
-
+.btn2 {
+    /*background-color: #E0E0E0;*/
+    background: linear-gradient(#FFFFFF, #BBBBBB);
+    color: black;
+}
+.btn2:hover {
+    background: #BBBBBB;
+    color: black;
+}
+.btn2:active {
+    background: #CCCCCC;
+    color: black;
+}
 

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+/*body {
+	margin: 0px;
+}
+.header, .footer {
+    border: 1px solid red;
+}*/
+/*.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}*/
+[class*="inCol-"] {
+    /*border: 1px solid red;*/
+    float: left;
+    /*padding: 15px;*/    
+	width: 100%;
+}
+
+/* Small Design */
+@media only screen and (max-width: 640px) {
+    .inCol-sm-1 {width: 3.33%;}
+    .inCol-sm-2 {width: 6.67%;}
+    .inCol-sm-3 {width: 10%;}
+    .inCol-sm-4 {width: 13.33%;}
+    .inCol-sm-5 {width: 16.67%;}
+    .inCol-sm-6 {width: 20%;}
+    .inCol-sm-7 {width: 23.33%;}
+    .inCol-sm-8 {width: 26.67%;}
+    .inCol-sm-9 {width: 30%;}
+    .inCol-sm-10 {width: 33.33%;}
+    .inCol-sm-11 {width: 36.67%;}
+    .inCol-sm-12 {width: 40%;}
+    .inCol-sm-13 {width: 43.33%;}
+    .inCol-sm-14 {width: 46.67%;}
+    .inCol-sm-15 {width: 50%;}
+    .inCol-sm-16 {width: 53.33%;}
+    .inCol-sm-17 {width: 56.67%;}
+    .inCol-sm-18 {width: 60%;}
+    .inCol-sm-19 {width: 63.33%;}
+    .inCol-sm-20 {width: 66.67%;}
+    .inCol-sm-21 {width: 70%;}
+    .inCol-sm-22 {width: 73.33%;}
+    .inCol-sm-23 {width: 76.67%;}
+    .inCol-sm-24 {width: 80%;}
+    .inCol-sm-25 {width: 83.33%;}
+    .inCol-sm-26 {width: 86.67%;}
+    .inCol-sm-27 {width: 90%;}
+    .inCol-sm-28 {width: 93.33%;}
+    .inCol-sm-29 {width: 96.67%;}
+    .inCol-sm-30 {width: 100%;}
+}
+/* Medium Design */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+    .inCol-med-1 {width: 3.33%;}
+    .inCol-med-2 {width: 6.67%;}
+    .inCol-med-3 {width: 10%;}
+    .inCol-med-4 {width: 13.33%;}
+    .inCol-med-5 {width: 16.67%;}
+    .inCol-med-6 {width: 20%;}
+    .inCol-med-7 {width: 23.33%;}
+    .inCol-med-8 {width: 26.67%;}
+    .inCol-med-9 {width: 30%;}
+    .inCol-med-10 {width: 33.33%;}
+    .inCol-med-11 {width: 36.67%;}
+    .inCol-med-12 {width: 40%;}
+    .inCol-med-13 {width: 43.33%;}
+    .inCol-med-14 {width: 46.67%;}
+    .inCol-med-15 {width: 50%;}
+    .inCol-med-16 {width: 53.33%;}
+    .inCol-med-17 {width: 56.67%;}
+    .inCol-med-18 {width: 60%;}
+    .inCol-med-19 {width: 63.33%;}
+    .inCol-med-20 {width: 66.67%;}
+    .inCol-med-21 {width: 70%;}
+    .inCol-med-22 {width: 73.33%;}
+    .inCol-med-23 {width: 76.67%;}
+    .inCol-med-24 {width: 80%;}
+    .inCol-med-25 {width: 83.33%;}
+    .inCol-med-26 {width: 86.67%;}
+    .inCol-med-27 {width: 90%;}
+    .inCol-med-28 {width: 93.33%;}
+    .inCol-med-29 {width: 96.67%;}
+    .inCol-med-30 {width: 100%;}
+}
+/* Normal Design */
+@media only screen and (min-width: 961px) and (max-width: 1400px) {
+    .inCol-nor-1 {width: 3.33%;}
+    .inCol-nor-2 {width: 6.67%;}
+    .inCol-nor-3 {width: 10%;}
+    .inCol-nor-4 {width: 13.33%;}
+    .inCol-nor-5 {width: 16.67%;}
+    .inCol-nor-6 {width: 20%;}
+    .inCol-nor-7 {width: 23.33%;}
+    .inCol-nor-8 {width: 26.67%;}
+    .inCol-nor-9 {width: 30%;}
+    .inCol-nor-10 {width: 33.33%;}
+    .inCol-nor-11 {width: 36.67%;}
+    .inCol-nor-12 {width: 40%;}
+    .inCol-nor-13 {width: 43.33%;}
+    .inCol-nor-14 {width: 46.67%;}
+    .inCol-nor-15 {width: 50%;}
+    .inCol-nor-16 {width: 53.33%;}
+    .inCol-nor-17 {width: 56.67%;}
+    .inCol-nor-18 {width: 60%;}
+    .inCol-nor-19 {width: 63.33%;}
+    .inCol-nor-20 {width: 66.67%;}
+    .inCol-nor-21 {width: 70%;}
+    .inCol-nor-22 {width: 73.33%;}
+    .inCol-nor-23 {width: 76.67%;}
+    .inCol-nor-24 {width: 80%;}
+    .inCol-nor-25 {width: 83.33%;}
+    .inCol-nor-26 {width: 86.67%;}
+    .inCol-nor-27 {width: 90%;}
+    .inCol-nor-28 {width: 93.33%;}
+    .inCol-nor-29 {width: 96.67%;}
+    .inCol-nor-30 {width: 100%;}
+}
+/* Big Design */
+@media only screen and (min-width: 1401px) {
+    .inCol-big-1 {width: 3.33%;}
+    .inCol-big-2 {width: 6.67%;}
+    .inCol-big-3 {width: 10%;}
+    .inCol-big-4 {width: 13.33%;}
+    .inCol-big-5 {width: 16.67%;}
+    .inCol-big-6 {width: 20%;}
+    .inCol-big-7 {width: 23.33%;}
+    .inCol-big-8 {width: 26.67%;}
+    .inCol-big-9 {width: 30%;}
+    .inCol-big-10 {width: 33.33%;}
+    .inCol-big-11 {width: 36.67%;}
+    .inCol-big-12 {width: 40%;}
+    .inCol-big-13 {width: 43.33%;}
+    .inCol-big-14 {width: 46.67%;}
+    .inCol-big-15 {width: 50%;}
+    .inCol-big-16 {width: 53.33%;}
+    .inCol-big-17 {width: 56.67%;}
+    .inCol-big-18 {width: 60%;}
+    .inCol-big-19 {width: 63.33%;}
+    .inCol-big-20 {width: 66.67%;}
+    .inCol-big-21 {width: 70%;}
+    .inCol-big-22 {width: 73.33%;}
+    .inCol-big-23 {width: 76.67%;}
+    .inCol-big-24 {width: 80%;}
+    .inCol-big-25 {width: 83.33%;}
+    .inCol-big-26 {width: 86.67%;}
+    .inCol-big-27 {width: 90%;}
+    .inCol-big-28 {width: 93.33%;}
+    .inCol-big-29 {width: 96.67%;}
+    .inCol-big-30 {width: 100%;}
+}
+
+
+
+
+
+
+
